@@ -28,14 +28,7 @@ void calcSine() {
 
  
 // 7. Cosine
-< 
-// 12. Absolute value
-void calcAbsolute(){
-  printf("\nEnter the value: ");
-  int value;
-  scanf("%d", &value);
-  printf("The absolute value is %d", abs(value));
-}
+ 
 
 int main() {
     int choice;
@@ -49,8 +42,16 @@ int main() {
         "6. Sine\n"
         "7. Cosine\n"
         "8. Tangent\n"
+
+        
+      "Enter your choice: ");
+
+  
         "9. Floor\n"
         );
+   
+  
+  
 
     scanf("%d", &choice);
 
@@ -60,11 +61,45 @@ int main() {
             break;
 
  
+        
+        
+        case 2:
+            calcSubtraction();
+            break;
+
+        case 3:
+            calcMultiplication();
+            break;
+
+        case 4:
+            calcDivision();
+            break;
+
+        case 5:
+            calcExponentiation();
+            break;
+
+        // 6. Sine
+ 
         case 6:
             calcSine();
             break;
 
  
+        
+        
+        
+        case 7:
+            calcCosine();
+            break;
+
+        case 8:
+            calcTangent();
+            break;
+        
+ 
+        
+        
         default:
             printf("Invalid choice!");
     }
