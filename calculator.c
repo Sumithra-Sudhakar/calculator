@@ -37,7 +37,7 @@ void calcDivision() {
     printf("The quotient is %d\n", result);
 }
 // 5. Exponentiation
-void calcEponentiation() {
+void calcExponentiation() {
     printf("\nEnter a number: \n");
     double a;
     scanf("%d", &a);
