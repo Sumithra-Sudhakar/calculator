@@ -13,6 +13,47 @@ void calcAddition() {
  
 // 2. Subtraction
  
+
+
+  void calcSubraction()
+{
+  printf("\nEnter two numbers: \n");
+    int a, b;
+    scanf("%d%d", &a, &b);
+    int result = a - b;
+    printf("The difference is %d\n", result);
+}
+// 3. Multiplication
+void calcMultiplication() 
+{
+    printf("\nEnter two numbers: \n");
+    int a, b;
+    scanf("%d%d", &a, &b);
+    int result = a * b;
+    printf("The product is %d\n", result);
+}
+// 4. Division
+void calcDivision() 
+{
+    printf("\nEnter two numbers: \n");
+    int a, b;
+    scanf("%d%d", &a, &b);
+    int result = a / b;
+    printf("The quotient is %d\n", result);
+}
+// 5. Exponentiation
+void calcExponentiation() 
+{
+    printf("\nEnter a number: \n");
+    double a;
+    scanf("%d%d", &a);
+    double result = exp(a);
+    printf("The Exponentiation is %d\n", result);
+}
+
+ 
+
+
 // 6. Sine
 void calcSine() {
     printf("\nEnter the angle in degrees: ");
@@ -30,7 +71,36 @@ void calcSine() {
 // 7. Cosine
  
 
-int main() {
+
+void calcCosine() {
+    printf("\nEnter the angle in degrees: ");
+    int angle;
+    scanf("%d", &angle);
+
+    // Convert degrees to radians
+    double radians = angle / 180.0 * 3.14;
+    double answer = cos(radians);
+
+    printf("The sine value is %f", answer);
+}
+// 8. Tangent
+void calcTangent() {
+    printf("\nEnter the angle in degrees: ");
+    int angle;
+    scanf("%d", &angle);
+
+    // Convert degrees to radians
+    double radians = angle / 180.0 * 3.14;
+    double answer = tan(radians);
+
+    printf("The sine value is %f", answer);
+}
+
+
+
+int main() 
+  
+{
     int choice;
     printf(
         "Welcome to the Cool Calculator program!\n\n"
@@ -41,6 +111,12 @@ int main() {
         "5. Exponentiation\n"
         "6. Sine\n"
         "7. Cosine\n"
+ 
+      
+      
+        "8. Tangent\n\n"
+        "Enter your choice: ");
+
         "8. Tangent\n"
 
         
@@ -51,6 +127,8 @@ int main() {
         );
    
   
+  
+ 
   
 
     scanf("%d", &choice);
@@ -64,6 +142,17 @@ int main() {
         
         
         case 2:
+ 
+        
+            calcSubraction();
+            break;
+        case 3:
+            calcMultiplication();
+            break;
+        case 4:
+            calcDivision();
+            break;
+=======
             calcSubtraction();
             break;
 
@@ -75,6 +164,7 @@ int main() {
             calcDivision();
             break;
 
+ 
         case 5:
             calcExponentiation();
             break;
@@ -92,14 +182,12 @@ int main() {
         case 7:
             calcCosine();
             break;
-
+ 
         case 8:
             calcTangent();
             break;
         
  
-        
-        
         default:
             printf("Invalid choice!");
     }
