@@ -10,41 +10,9 @@ void calcAddition() {
     printf("The sum is %d\n", result);
 }
 
-// Fill the rest of the functionality here!
+ 
 // 2. Subtraction
-void calcSubtraction() {
-    printf("\nEnter two numbers: \n");
-    int a, b;
-    scanf("%d%d", &a, &b);
-    int result = a - b;
-    printf("The difference is %d\n", result);
-}
-
-// 3. Multiplication
-void calcMultiplication() {
-    printf("\nEnter two numbers: \n");
-    int a, b;
-    scanf("%d%d", &a, &b);
-    int result = a * b;
-    printf("The product is %d\n", result);
-}
-// 4. Division
-void calcDivision() {
-    printf("\nEnter two numbers: \n");
-    int a, b;
-    scanf("%d%d", &a, &b);
-    int result = a / b;
-    printf("The quotient is %d\n", result);
-}
-// 5. Exponentiation
-void calcExponentiation() {
-    printf("\nEnter a number: \n");
-    double a;
-    scanf("%d", &a);
-    double result = exp(a);
-    printf("The exponent is %d\n", result);
-}
-
+ 
 // 6. Sine
 void calcSine() {
     printf("\nEnter the angle in degrees: ");
@@ -58,33 +26,9 @@ void calcSine() {
     printf("The sine value is %f", answer);
 }
 
-// Fill the rest of the functionality here!
+ 
 // 7. Cosine
-void calcCosine() {
-    printf("\nEnter the angle in degrees: ");
-    int angle;
-    scanf("%d", &angle);
-
-    // Convert degrees to radians
-    double radians = angle / 180.0 * 3.14;
-    double answer = cos(radians);
-
-    printf("The cosine value is %f", answer);
-}
-
-// 8. Tangent
-void calcTangent() {
-    printf("\nEnter the angle in degrees: ");
-    int angle;
-    scanf("%d", &angle);
-
-    // Convert degrees to radians
-    double radians = angle / 180.0 * 3.14;
-    double answer = tan(radians);
-
-    printf("The tangent value is %f", answer);
-}
-
+ 
 
 int main() {
     int choice;
@@ -98,16 +42,27 @@ int main() {
         "6. Sine\n"
         "7. Cosine\n"
         "8. Tangent\n"
-        "Enter your choice: ");
+
+        
+      "Enter your choice: ");
+
+  
+        "9. Floor\n"
+        );
+   
+  
+  
 
     scanf("%d", &choice);
 
     switch (choice) {
-        // 1. Addition
-        case 1:
+                case 1:
             calcAddition();
             break;
 
+ 
+        
+        
         case 2:
             calcSubtraction();
             break;
@@ -125,10 +80,15 @@ int main() {
             break;
 
         // 6. Sine
+ 
         case 6:
             calcSine();
             break;
 
+ 
+        
+        
+        
         case 7:
             calcCosine();
             break;
@@ -136,6 +96,9 @@ int main() {
         case 8:
             calcTangent();
             break;
+        
+ 
+        
         
         default:
             printf("Invalid choice!");
