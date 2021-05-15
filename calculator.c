@@ -11,15 +11,12 @@ void calcAddition() {
 }
 
 // 2. Subtraction
-void calcSubtraction() {
+ 
     printf("\nEnter two numbers: \n");
     int a, b;
     scanf("%d%d", &a, &b);
     int result = a - b;
-    printf("The difference is %d\n", result);
-}
-// 3. Multiplication
-void calcMultiplication() {
+ 
     printf("\nEnter two numbers: \n");
     int a, b;
     scanf("%d%d", &a, &b);
@@ -27,12 +24,12 @@ void calcMultiplication() {
     printf("The product is %d\n", result);
 }
 // 4. Division
-void calcDivision() {
+ 
     printf("\nEnter two numbers: \n");
     int a, b;
     scanf("%d%d", &a, &b);
     int result = a / b;
-    printf("The quotient is %d\n", result);
+ 
 }
 // 5. Exponentiation
 void calcExponentiation() {
@@ -42,6 +39,7 @@ void calcExponentiation() {
     int result = pow(a,b);
     printf("The answer is %d\n", result);
 }
+
 
 // 6. Sine
 void calcSine() {
@@ -117,13 +115,7 @@ int main() {
             break;
 
         case 2:
-        	 calcSubtraction();
-            break;
-        case 3:
-        	 calcMultiplication();
-            break;
-        case 4:
-        	 calcDivision();
+ 
             break;
         case 5:
         	 calcExponentiation();
