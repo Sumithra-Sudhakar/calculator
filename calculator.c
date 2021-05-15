@@ -10,6 +10,7 @@ void calcAddition() {
     printf("The sum is %d\n", result);
 }
 
+ 
 // 2. Subtraction
  
 // 6. Sine
@@ -25,6 +26,7 @@ void calcSine() {
     printf("The sine value is %f", answer);
 }
 
+ 
 // 7. Cosine
 < 
 // 12. Absolute value
@@ -57,14 +59,11 @@ int main() {
             calcAddition();
             break;
 
-        case 2:
  
-
         case 6:
             calcSine();
             break;
 
-        case 7:
  
         default:
             printf("Invalid choice!");
