@@ -10,8 +10,11 @@ void calcAddition() {
     printf("The sum is %d\n", result);
 }
 
-// Fill the rest of the functionality here!
+ 
 // 2. Subtraction
+ 
+
+
   void calcSubraction()
 {
   printf("\nEnter two numbers: \n");
@@ -48,6 +51,9 @@ void calcExponentiation()
     printf("The Exponentiation is %d\n", result);
 }
 
+ 
+
+
 // 6. Sine
 void calcSine() {
     printf("\nEnter the angle in degrees: ");
@@ -61,8 +67,11 @@ void calcSine() {
     printf("The sine value is %f", answer);
 }
 
-// Fill the rest of the functionality here!
+ 
 // 7. Cosine
+ 
+
+
 void calcCosine() {
     printf("\nEnter the angle in degrees: ");
     int angle;
@@ -88,7 +97,9 @@ void calcTangent() {
 }
 
 
+
 int main() 
+  
 {
     int choice;
     printf(
@@ -100,18 +111,39 @@ int main()
         "5. Exponentiation\n"
         "6. Sine\n"
         "7. Cosine\n"
+ 
+      
+      
         "8. Tangent\n\n"
         "Enter your choice: ");
+
+        "8. Tangent\n"
+
+        
+      "Enter your choice: ");
+
+  
+        "9. Floor\n"
+        );
+   
+  
+  
+ 
+  
 
     scanf("%d", &choice);
 
     switch (choice) {
-        // 1. Addition
-        case 1:
+                case 1:
             calcAddition();
             break;
 
+ 
+        
+        
         case 2:
+ 
+        
             calcSubraction();
             break;
         case 3:
@@ -120,22 +152,42 @@ int main()
         case 4:
             calcDivision();
             break;
+=======
+            calcSubtraction();
+            break;
+
+        case 3:
+            calcMultiplication();
+            break;
+
+        case 4:
+            calcDivision();
+            break;
+
+ 
         case 5:
             calcExponentiation();
             break;
 
         // 6. Sine
+ 
         case 6:
             calcSine();
             break;
 
+ 
+        
+        
+        
         case 7:
             calcCosine();
             break;
+ 
         case 8:
             calcTangent();
             break;
         
+ 
         default:
             printf("Invalid choice!");
     }
