@@ -130,7 +130,7 @@ int main() {
             break;
 
         case 7:
-            calccosine();
+            calcCosine();
             break;
 
         case 8:
